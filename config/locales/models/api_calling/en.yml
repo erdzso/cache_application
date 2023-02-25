@@ -1,0 +1,13 @@
+en:
+  activerecord:
+    models:
+      api_calling:
+        one: Api calling
+        other: Api callings
+    attributes:
+      api_calling:
+        api_caller: Api caller
+        expired_at: Expired at
+        hit_count: Hit count
+        state: State
+        result: Result

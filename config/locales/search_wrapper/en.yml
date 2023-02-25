@@ -1,0 +1,22 @@
+en:
+  search_wrapper:
+    models:
+      search_wrapper/movie:
+        one: Movie
+        other: Movies
+    attributes:
+      search_wrapper:
+        id: Identifier
+        primary_name: Primary name
+      search_wrapper/movie:
+        title: Title
+        overview: Overview
+        original_title: Original title
+        original_language: Original language
+        popularity: Popularity
+        release_date: Release date
+        vote_average: Vote average
+        vote_count: Vote count
+
+
+

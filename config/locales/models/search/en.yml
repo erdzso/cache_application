@@ -1,0 +1,14 @@
+en:
+  activerecord:
+    models:
+      search:
+        one: Search
+        other: Searches
+      search/movie:
+        one: Movie search
+        other: Movie searches
+    attributes:
+      search:
+        type: Type
+        query: Query
+        page: Page

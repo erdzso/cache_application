@@ -5,5 +5,14 @@ require:
 Lint/MissingCopEnableDirective:
   Enabled: false
 
-RSpec/MultipleMemoizedHelpers:
+RSpec/ExampleLength:
+  Max: 15
+
+RSpec/MessageSpies:
+  EnforcedStyle: receive
+
+RSpec/MultipleExpectations:
   Max: 10
+
+RSpec/MultipleMemoizedHelpers:
+  Max: 15

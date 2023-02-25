@@ -1,0 +1,3 @@
+---
+:expiration_time: 120 # seconds
+:movies_client_api_key: "---a-real-api-key---"

@@ -1,0 +1,26 @@
+<h1><%= @search_class.model_name.human -%></h1>
+
+<%= form_with url: movie_search_path, method: :get do |form| %>
+  <div class="row">
+    <div class="col col-9">
+      <%= form.text_field :query, class: [ 'form-control' ], value: @search&.query %>
+    </div>
+    <div class="col col-3">
+      <%= form.submit t('views.searches.search'), class: [ 'form-control', 'btn', 'btn-primary' ] %>
+    </div>
+  </div>
+<% end %>
+</br>
+
+<% if flash[:error] %>
+  <%= error_alert(flash[:error]) %>
+<% elsif @search %>
+  <%= api_calling_alert(@api_calling.hit_count) %>
+  <% if @api_calling.succeeded? %>
+    <% response = @api_calling.result['response'] %>
+    <%= list response['results'], @search_class.wrapper_class %>
+    <%= paginate OpenStruct.new(current_page: response['page'], per_page: 20, total_pages: response['total_pages']) %>
+  <% elsif @api_calling.failed? %>
+    <%= error_alert(t('views.searches.could_not_reach_the_api')) %>
+  <% end %>
+<% end %>

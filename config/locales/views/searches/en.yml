@@ -1,0 +1,10 @@
+en:
+  views:
+    searches:
+      an_api_request: an API request
+      cache: 'cache (hit count: %{hit_count})'
+      could_not_reach_the_api: Could not reach the API
+      more_info: More info
+      results_were_provided_from: Results were provided from %{source} 
+      search: Search
+      unavailable: Unavailable

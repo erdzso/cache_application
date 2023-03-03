@@ -4,3 +4,6 @@ require:
 
 Lint/MissingCopEnableDirective:
   Enabled: false
+
+RSpec/MultipleMemoizedHelpers:
+  Max: 10
